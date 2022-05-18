@@ -22,6 +22,7 @@ Vue.use(BootstrapVue)
 Vue.use(vueDebounce)
 
 const routes = [
+    { path: '/', component: Login, name: 'login', meta: { requiresAuth: false } },
     { path: '/login', component: Login, name: 'login', meta: { requiresAuth: false } },
     { path: '/register', component: Signup, name: 'signup', meta: { requiresAuth: false } },
     { path: '/product', component: Product, name: 'product', meta: { requiresAuth: true } },
